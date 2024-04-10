@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+hr {
+  background-color: rgb(0, 0, 0);
+  color: black;
+  width: 450px;
+  height: 3px;
+  border: none;
+}
+body {
+  width: 100vw;
+  background-color: #5bb1e0;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+.table-article {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.TableList {
+  border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 420px;
+  height: 200px;
+  overflow: auto;
+}
+
+p {
+  margin: 85px auto;
+}
+
+/* estilos del componente Tareas */
+.article-tareas {
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul-tareas {
+  margin: 0 auto;
+  gap: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 390px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.li-tareas {
+  list-style: none;
+  margin-left: 15px;
+}
+
+.btn-tareas {
+  padding-right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: cursive;
+}
+.check-Tareas {
+  text-decoration: line-through;
+  color: rgb(90, 87, 87);
+  font-family: cursive;
+}
+
+input[type="checkbox"] {
+  margin-left: 15px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+input:checked {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ESTILOS PARA EL COMPONENTE ADDTAREA */
+
+.input-addTarea {
+  width: 340px;
+  height: 30px;
+  border: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 5px;
+}
+.form-add-tarea {
+  margin-top: 3px;
+  display: flex;
+  gap: 5px;
+}
+/* Oculta el placeholder cuando el input está enfocado */
+.input-addTarea:focus::placeholder {
+  opacity: 0;
+}
+
+.input-addTarea:focus {
+  outline: 1px solid rgb(0, 0, 0);
+}
+
+.btn-addTarea {
+  padding: 5px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 13px;
+  border-radius: 7px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn-addTarea:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: black;
+}
