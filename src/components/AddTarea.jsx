@@ -4,9 +4,9 @@ export const AddTarea = ({ nuevaTarea }) => {
   
   const [inputValue, setinputValue] = useState("");
 
-  const onChange = ({ target }) => {
-    setinputValue(target.value);
-  };
+  // const onChange = ({ target }) => {
+  //   setinputValue(target.value);
+  // };
 
   const OnSubmit = (evento) => {
     evento.preventDefault();
@@ -21,7 +21,7 @@ export const AddTarea = ({ nuevaTarea }) => {
           className="input-addTarea"
           type="text"
           placeholder="Nuevo recordatorio"
-          onChange={onChange}
+          onChange={(e)=>{(setinputValue(e.target.value))}}
           value={inputValue}
           
         />
